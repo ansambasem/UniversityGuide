@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FD">
+
+    <RelativeLayout
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#1A237E"
+        android:padding="30dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="أهلاً بك في"
+            android:textColor="#BDC3C7"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcomeText"
+            android:text="دليلك الجامعي الذكي"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:alpha="0.9"
+            android:src="@drawable/ic_launcher"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSubjects"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="-30dp"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="8dp"
+        android:text="📚   المواد الدراسية"
+        android:textColor="#1A237E"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerView" />
+
+    <Button
+        android:id="@+id/btnTeachers"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="4dp"
+        android:text="👨‍🏫   الهيئة التدريسية"
+        android:textColor="#1A237E"
+        android:textSize="18sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="@id/btnSubjects"
+        app:layout_constraintStart_toStartOf="@id/btnSubjects"
+        app:layout_constraintTop_toBottomOf="@id/btnSubjects" />
+
+    <Button
+        android:id="@+id/btnDepts"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="4dp"
+        android:text="🏢   الأقسام الجامعية"
+        android:textColor="#1A237E"
+        android:textSize="18sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="@id/btnTeachers"
+        app:layout_constraintStart_toStartOf="@id/btnTeachers"
+        app:layout_constraintTop_toBottomOf="@id/btnTeachers" />
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#1B299D"
+        android:text="ℹ️   عن التطبيق"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="@id/btnDepts"
+        app:layout_constraintStart_toStartOf="@id/btnDepts"
+        app:layout_constraintTop_toBottomOf="@id/btnDepts" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#4752A6"
+        android:paddingHorizontal="40dp"
+        android:text="خروج"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

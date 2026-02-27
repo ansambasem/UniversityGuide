@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F9F1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#254D78"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الهيئة التدريسية"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/teacher"
+            android:layout_alignParentRight="true"
+            android:alpha="0.9" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/teachersListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:padding="15dp"
+        android:clipToPadding="false"/>
+
+    <Button
+        android:id="@+id/btnBackFromTeachers"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="العودة للرئيسية"
+        android:layout_margin="15dp"
+        android:backgroundTint="#254D78"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp" />
+
+</LinearLayout>
